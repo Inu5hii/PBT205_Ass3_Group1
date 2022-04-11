@@ -27,13 +27,7 @@ const int GUI_HEIGHT = 10;
 
 // Function declarations
 void drawLevelAndGui(int score);
-int playSnake();
 int displayMenuScreen();
-void portalTheSnake();
-void displayGameOver();
-void displayScores(int score);
-void displayPauseScreen();
-Point2d randPosNotUnderTail(Point2d locationWaterMelon, Point2d locationMango);
 
 /* ------------------------------------------------------------------------- MAIN */
 int main()
