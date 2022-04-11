@@ -6,6 +6,7 @@
 #include "textpixels.h"
 #include "ContactTracing.h"
 #include "Chat.h"
+#include "Stocks.h"
 
 using namespace std;
 using namespace textpixels;
