@@ -5,6 +5,7 @@
 #include "textpixels_enums.h"
 #include "textpixels.h"
 #include "ContactTracing.h"
+#include "Chat.h"
 
 using namespace std;
 using namespace textpixels;
