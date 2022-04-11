@@ -19,6 +19,7 @@ public:
 	Stocks();
 	Stocks(string username, int buyer, int seller, double price);
 
+	void price(int Quantity);
 	void buying(string username, int buyer, double price);
 	void selling(string username, int seller, double price);
 };

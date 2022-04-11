@@ -8,6 +8,10 @@ Stocks::Stocks(string username, int buyer, int seller, double price)
 {
 }
 
+void Stocks::price(int Quantity)
+{
+}
+
 void Stocks::buying(string username, int buyer, double price)
 {
 }
