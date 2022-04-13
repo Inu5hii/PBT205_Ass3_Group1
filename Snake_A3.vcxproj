@@ -128,17 +128,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Chat.cpp" />
-    <ClCompile Include="ContactTracing.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Point2d.cpp" />
-    <ClCompile Include="Stocks.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chat.h" />
-    <ClInclude Include="ContactTracing.h" />
     <ClInclude Include="Point2d.h" />
-    <ClInclude Include="Stocks.h" />
     <ClInclude Include="textpixels.h" />
     <ClInclude Include="textpixels_enums.h" />
   </ItemGroup>
