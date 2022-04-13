@@ -53,15 +53,18 @@ int main()
     }
     else if (screen == Screen::CHAT)
     {
-      screen = Screen::MENU;      // When game is done, we want to go to menu
+        ChatScreen();
+        screen = Screen::MENU;
     }
     else if (screen == Screen::STOCKS)
     {
-        screen = Screen::MENU;      // When game is done, we want to go to menu
+        StockScreen();
+        screen = Screen::MENU;
     }
     else if (screen == Screen::CONTACT_TRACING)
     {
-        screen = Screen::MENU;      // When game is done, we want to go to menu
+        ChessScreen();
+        screen = Screen::MENU;
     }
   }
 
@@ -83,9 +86,12 @@ int displayMenuScreen()
     textpixels::startFrame();   // Needed always at start of game loop
 
     fillWindow(FG_WHITE);
-    drawString(3, 5, "(Q) Chat", layerColours(FG_WHITE, BG_DARK_MAGENTA));
-    drawString(3, 8, "(W) Stocks", layerColours(FG_WHITE, BG_DARK_MAGENTA));
-    drawString(3, 11, "(E) Contact Tracing", layerColours(FG_WHITE, BG_DARK_MAGENTA));
+    fillRect(0, 0, 30, 5, FG_DARK_BLUE);
+    drawString(8, 2, "Project CCS", layerColours(FG_WHITE, BG_DARK_BLUE));
+    drawString(9, 15, "(Q) Chat", layerColours(FG_WHITE, BG_DARK_MAGENTA));
+    drawString(9, 18, "(W) Stocks", layerColours(FG_WHITE, BG_DARK_MAGENTA));
+    drawString(9, 21, "(E) Contact Tracing", layerColours(FG_WHITE, BG_DARK_MAGENTA));
+    drawString(9, 60, "(X) Exit", layerColours(FG_WHITE, BG_DARK_MAGENTA));
     
 
     // Check if any valid keys are down. `else if` makes sure we only take one
